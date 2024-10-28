@@ -1,0 +1,96 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Przyjemna czcionka */
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4; /* Jasnoszare tło dla lepszej czytelności */
+}
+
+h1, h2, h3, h4 {
+    color: #2c3e50; /* Głęboki odcień niebieskiego dla nagłówków */
+    margin-bottom: 15px; /* Spacing below headers */
+}
+
+ul {
+    list-style-type: none; /* Usunięcie punktów listy */
+    padding: 0; /* Usunięcie domyślnego paddingu */
+}
+
+li {
+    margin: 10px 0; /* Marginesy dla elementów listy */
+    cursor: pointer; /* Kursor wskaźnika dla li */
+    padding: 15px; /* Większy padding dla lepszej interakcji */
+    background-color: #ffffff; /* Białe tło elementów listy */
+    border: 1px solid #2980b9; /* Kontrastowa granica */
+    border-radius: 8px; /* Zaokrąglenie krawędzi */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Cień dla głębi */
+    transition: background-color 0.3s, transform 0.3s; /* Płynna zmiana tła i transformacji */
+}
+
+li:hover {
+    background-color: #2980b9; /* Kolor tła po najechaniu */
+    color: #fff; /* Kolor tekstu po najechaniu */
+    transform: translateY(-2px); /* Lekki ruch w górę */
+}
+
+button {
+    margin: 10px 0; /* Spacing dla przycisków */
+    padding: 12px 24px; /* Większy padding dla przycisku */
+    font-size: 1em; /* Rozmiar czcionki */
+    background-color: #27ae60; /* Zielony kolor tła przycisku */
+    color: #fff; /* Kolor tekstu przycisku */
+    border: none; /* Usunięcie granicy */
+    border-radius: 5px; /* Zaokrąglenie krawędzi */
+    cursor: pointer; /* Kursor wskaźnika dla przycisku */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Cień dla głębi */
+    transition: background-color 0.3s, transform 0.3s; /* Płynna zmiana tła */
+}
+
+button:hover {
+    background-color: #219653; /* Ciemniejszy zielony po najechaniu */
+    transform: translateY(-2px); /* Lekki ruch w górę */
+}
+
+.flashcard {
+    width: 350px; /* Szerokość fiszki */
+    height: 200px; /* Wysokość fiszki */
+    perspective: 1000px; /* Perspektywa dla efektu 3D */
+    margin: 20px auto; /* Wyśrodkowanie fiszki */
+}
+
+.card-inner {
+    width: 100%; /* Szerokość wewnętrznej karty */
+    height: 100%; /* Wysokość wewnętrznej karty */
+    position: relative; /* Pozycjonowanie wewnętrzne */
+    transform-style: preserve-3d; /* Utrzymywanie efektu 3D */
+    transition: transform 0.2s ease; /* Płynna animacja obrotu */
+}
+
+.flashcard.flipped .card-inner {
+    transform: rotateY(180deg); /* Obrót fiszki po przewróceniu */
+}
+
+.card-face {
+    position: absolute; /* Pozycjonowanie absolutne */
+    width: 100%; /* Szerokość twarzy karty */
+    height: 100%; /* Wysokość twarzy karty */
+    backface-visibility: hidden; /* Ukrywanie tylnej strony */
+    display: flex; /* Umożliwienie flexbox */
+    align-items: center; /* Wyrównanie w pionie */
+    justify-content: center; /* Wyrównanie w poziomie */
+    padding: 20px; /* Padding wewnętrzny */
+    box-sizing: border-box; /* Umożliwienie prawidłowego obliczania wymiarów */
+    border-radius: 8px; /* Zaokrąglenie krawędzi */
+    font-size: 18px; /* Rozmiar czcionki */
+}
+
+.front {
+    background-color: #ecf0f1; /* Jasny kolor tła frontu */
+    color: #2c3e50; /* Kolor tekstu frontu */
+    border: 1px solid #bdc3c7; /* Delikatna granica frontu */
+}
+
+.back {
+    background-color: #2c3e50; /* Ciemny kolor tła tyłu */
+    color: #fff; /* Kolor tekstu tyłu */
+    transform: rotateY(180deg); /* Obrót tyłu */
+}

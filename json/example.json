@@ -1,0 +1,40 @@
+{"courses": [
+        {"id": 1,
+            "title": "Kurs Języka Angielskiego",
+            "lessons": [
+                {"id": 1,
+                    "title": "Lekcja 1: Podstawowe słowa",
+                    "flashcards": [
+                        {"question": "Hello","answer": "Cześć"},
+                        {"question": "Goodbye","answer": "Do widzenia"}
+                    ]},
+                {"id": 2,
+                    "title": "Lekcja 2: Kolory",
+                    "flashcards": [
+                        {"question": "Red","answer": "Czerwony"},
+                        {"question": "Blue","answer": "Niebieski"}
+                    ]},
+                {"id": 3,
+                    "title": "Lekcja 3: Doulingo",
+                    "flashcards": [
+                        {"question": "Hello","answer": "Cześć"},
+                        {"question": "connectors","answer": "złącza"},
+                        {"question": "preferable","answer": "lepszy, preferowany"},
+                        {"question": "footprints","answer": "ślady stóp, ślady"}
+                    ]
+                }
+            ]},
+        {"id": 2,
+            "title": "Kurs Języka Włoskiego",
+            "lessons": [
+                {"id": 1,
+                    "title": "Lekcja 1: Podstawowe zwroty",
+                    "flashcards": [
+                        {"question": "Buongiorno","answer": "Dzień dobry"},
+                        {"question": "Arrivederci","answer": "Do widzenia"}
+                    ]
+                }
+            ]
+        }
+    ]
+}
